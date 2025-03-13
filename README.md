@@ -11,7 +11,7 @@
 1. sudo yum install wget
 
 • устанавливает утилиту wget на вашу систему
-![image](https://github.com/user-attachments/assets/b2650d1d-f531-4e25-9842-012e9076cc60)
+![image](https://web.telegram.org/a428f79a-34bc-43b9-90c3-7b48d1f304ca)
 
 2. sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo
 

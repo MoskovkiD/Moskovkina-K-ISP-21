@@ -163,7 +163,7 @@
 
 * Connection
 * `http://prometheus:9090`
-* 
+  
 ![image](https://github.com/user-attachments/assets/8fe61438-3ff7-4f23-8deb-e55dbda8b83a)
 
 * Authentication
@@ -177,10 +177,11 @@
 * в меню выбираем вкладку Dashboards и создаем Dashboard
     * ждем кнопку "Import dashboard"
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
-    * Select Prometheus ждем кнопку "Import"
-    * 
+
+      
 ![image](https://github.com/user-attachments/assets/d464ea90-b5d8-4d44-973d-028ce150a7a1)
- 
+
+ * Select Prometheus ждем кнопку "Import"
       
 ![image](https://github.com/user-attachments/assets/88c472c3-1a61-4d6c-a631-af4af2492fc2)
 

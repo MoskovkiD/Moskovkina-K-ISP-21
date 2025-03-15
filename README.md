@@ -151,25 +151,33 @@
 
       
 * в меню выбираем вкладку Dashboards и создаем Dashboard
-* 
+  
 ![image](https://github.com/user-attachments/assets/5b31ff06-889d-48f3-9cbf-6219e34aa799)
 
-    * ждем кнопку +Add visualization, а после "Configure a new data source"
-    * выбираем Prometheus
+
+* ждем кнопку +Add visualization, а после "Configure a new data source"
+* выбираем Prometheus
+
 
 ![image](https://github.com/user-attachments/assets/aa3fed3a-c610-4934-9339-e38c054d2843)
 
-    * Connection
-    * `http://prometheus:9090`
+* Connection
+* `http://prometheus:9090`
+![image](https://github.com/user-attachments/assets/8fe61438-3ff7-4f23-8deb-e55dbda8b83a)
+
 * Authentication
     * Basic authentication
         * User: `admin`
         * Password: `admin`
         * Нажимаем на Save & test и должно показывать зелёную галочку
+      
+![image](https://github.com/user-attachments/assets/b1d8c747-66af-4a29-943a-b3a6c107fa5d)
+
 * в меню выбираем вкладку Dashboards и создаем Dashboard
     * ждем кнопку "Import dashboard"
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
+![image](https://github.com/user-attachments/assets/d464ea90-b5d8-4d44-973d-028ce150a7a1)
  
       
 ![image](https://github.com/user-attachments/assets/88c472c3-1a61-4d6c-a631-af4af2492fc2)

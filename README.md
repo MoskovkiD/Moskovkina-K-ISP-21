@@ -163,6 +163,7 @@
 
 * Connection
 * `http://prometheus:9090`
+* 
 ![image](https://github.com/user-attachments/assets/8fe61438-3ff7-4f23-8deb-e55dbda8b83a)
 
 * Authentication
@@ -177,6 +178,7 @@
     * ждем кнопку "Import dashboard"
     * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
     * Select Prometheus ждем кнопку "Import"
+    * 
 ![image](https://github.com/user-attachments/assets/d464ea90-b5d8-4d44-973d-028ce150a7a1)
  
       
@@ -184,6 +186,7 @@
 
 
 Возникла ошибка в графане, графан выдавал все по 00, после махинаций с кодами ниже все пришло в норму
+
 ![image](https://github.com/user-attachments/assets/d8f78757-ee0d-46a7-847c-fa510805f641)
 
 Бум, результат

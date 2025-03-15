@@ -43,8 +43,8 @@
 ![image](https://github.com/user-attachments/assets/ef5c1edb-420c-41bb-9adc-fe0a5001d7ce)
 
 
-     COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
-
+    COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)
+    
 • Объявление переменной COMVER, полученной в результате curl запроса, хранящей в себе номер последней
 версии Docker Compose
 

@@ -100,15 +100,15 @@
 
 • файл grafana.ini уже существует, команда обновит его временные метки (время последнего доступа и изменения). Если файл не существует, команда создаст новый пустой файл с указанным именем по указанному пути.
 
-      cp config/* /mnt/common_volume/swarm/grafana/config/
+        cp config/* /mnt/common_volume/swarm/grafana/config/
 
 • команда копирует все файлы и подкаталоги из директории config в директорию /mnt/common_volume/swarm/grafana/config/
 
-      mv grafana.yaml docker-compose.yaml
+         mv grafana.yaml docker-compose.yaml
 
 • команда переименовывает файл grafana.yaml в docker-compose.yaml. Ничего не покажет, но можно проверить при помощи команды ls
 
-      sudo docker compose up -d
+         sudo docker compose up -d
 
 • команда создает и запускает контейнеры в фоновом режиме, используя конфигурацию из файла docker-compose.yml, с правами суперпользователя.
 
@@ -118,7 +118,7 @@
 ![image](https://github.com/user-attachments/assets/54b3c62e-9b1e-45b3-83b9-78cceb65cdea)
 
 
-      sudo vi docker-compose.yaml
+         sudo vi docker-compose.yaml
 
 • Команда открывает файл docker-compose.yaml в текстовом редакторе vi с правами суперпользователя, что позволяет вам редактировать его содержимое.
 

@@ -208,11 +208,13 @@
 
 ![image](https://github.com/user-attachments/assets/6e7e6b51-032b-49b3-a395-a896b16be764)
 
-Захом в connection там где мы писали http//:prometheus:9090 пишем http//:victoriametrics:8428 И заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code" Переходим в терминал и пишем
+Захом в connection пишем 'http//:victoriametrics:8428' 
+И заменяем имя из "Prometheus-2" в "Viktoria" нажимаем на dashboards add visualition выбираем "Viktoria" снизу меняем на "code" 
 
 
 ![image](https://github.com/user-attachments/assets/81eed664-073a-4541-8509-069ed7844eeb)
 
+Переходим в терминал и пишем
 
     echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
     

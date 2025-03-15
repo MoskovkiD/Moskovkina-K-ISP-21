@@ -144,6 +144,8 @@
 
 ## Grafana
 
+![image](https://github.com/user-attachments/assets/88c472c3-1a61-4d6c-a631-af4af2492fc2)
+
 * переходим на сайт `localhost:3000`
     * User & Password GRAFANA: `admin`
     * Код графаны: `3000`
@@ -182,9 +184,6 @@
 ![image](https://github.com/user-attachments/assets/d464ea90-b5d8-4d44-973d-028ce150a7a1)
 
  * Select Prometheus ждем кнопку "Import"
-      
-![image](https://github.com/user-attachments/assets/88c472c3-1a61-4d6c-a631-af4af2492fc2)
-
 
 Возникла ошибка в графане, графан выдавал все по 00, после махинаций с кодами ниже все пришло в норму
 

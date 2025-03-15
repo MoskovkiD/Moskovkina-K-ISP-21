@@ -15,7 +15,7 @@
 ![image](https://github.com/user-attachments/assets/b13eccb0-8996-4d1f-93cf-b634b174768a)
 
 
-     sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo
+    sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo
 
 • Скачиваем файл репозитория
 
@@ -23,7 +23,7 @@
 
 
 
-     sudo yum install docker-ce docker-ce-cli containerd.io
+    sudo yum install docker-ce docker-ce-cli containerd.io
 
 • Устанавливаем docker
 
@@ -32,11 +32,11 @@
 ![image](https://github.com/user-attachments/assets/a82d2a08-5081-49a0-846d-d786e723ee4a)
 
 
-     sudo systemctl enable docker --now
+    sudo systemctl enable docker --now
 
 • Запускаем его и разрешаем автозапуск
 
-     sudo yum install curl
+    sudo yum install curl
 
 • Для этого сначала убедимся в наличие пакета curl
 
@@ -52,7 +52,7 @@
 
 
 
-     sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose                  
+    sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose                  
 
 • Теперь скачиваем скрипт docker-compose последней версии, используя объявленную ранее переменную и помещаем его в каталог /usr/bin
 
@@ -60,11 +60,11 @@
 ![image](https://github.com/user-attachments/assets/796389f9-6f71-451c-abaf-01ce3849a5fc)
 
 
-     sudo chmod +x /usr/bin/docker-compose
+    sudo chmod +x /usr/bin/docker-compose
 
 • Предоставление прав на выполнение файла docker-compose.
 
-     docker-compose --version
+    docker-compose --version
 
 • Проверка установленной версии Docker Compose.
 
@@ -73,42 +73,42 @@
 
 • Можно скачать git прямо из командной строки прописав Y
 
-     git clone https://github.com/skl256/grafana_stack_for_docker.git
+    git clone https://github.com/skl256/grafana_stack_for_docker.git
 
 • выдаст ошибку и предложит скачать git, согласиться и продолжить
 
 ![image](https://github.com/user-attachments/assets/4ab79cc4-a542-4fcc-bbc8-30dbd92243e8)
 
 
-       cd grafana_stack_for_docker
+    cd grafana_stack_for_docker
     
 • переход в папку
 
-      sudo mkdir -p /mnt/common_volume/swarm/grafana/config
+    sudo mkdir -p /mnt/common_volume/swarm/grafana/config
 
 • команда создаёт полный путь /mnt/common_volume/swarm/grafana/config, включая все необходимые промежуточные каталоги, если они ещё не существуют.
 
-     sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}
+    sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}
 
 • команда создаёт структуру каталогов для Grafana и связанных с ней компонентов, если они ещё не существуют.
 
-      sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}
+    sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}
 
 • все файлы и каталоги в указанных директориях будут переданы в собственность текущему пользователю и его группе
 
-      touch /mnt/common_volume/grafana/grafana-config/grafana.ini
+    touch /mnt/common_volume/grafana/grafana-config/grafana.ini
 
 • файл grafana.ini уже существует, команда обновит его временные метки (время последнего доступа и изменения). Если файл не существует, команда создаст новый пустой файл с указанным именем по указанному пути.
 
-        cp config/* /mnt/common_volume/swarm/grafana/config/
+     cp config/* /mnt/common_volume/swarm/grafana/config/
 
 • команда копирует все файлы и подкаталоги из директории config в директорию /mnt/common_volume/swarm/grafana/config/
 
-         mv grafana.yaml docker-compose.yaml
+    mv grafana.yaml docker-compose.yaml
 
 • команда переименовывает файл grafana.yaml в docker-compose.yaml. Ничего не покажет, но можно проверить при помощи команды ls
 
-         sudo docker compose up -d
+    sudo docker compose up -d
 
 • команда создает и запускает контейнеры в фоновом режиме, используя конфигурацию из файла docker-compose.yml, с правами суперпользователя.
 
@@ -118,7 +118,7 @@
 ![image](https://github.com/user-attachments/assets/54b3c62e-9b1e-45b3-83b9-78cceb65cdea)
 
 
-         sudo vi docker-compose.yaml
+    sudo vi docker-compose.yaml
 
 • Команда открывает файл docker-compose.yaml в текстовом редакторе vi с правами суперпользователя, что позволяет вам редактировать его содержимое.
 
@@ -131,6 +131,40 @@
 ![image](https://github.com/user-attachments/assets/469e5e00-f6b1-4c8f-99f6-cfcbf3914926)
 
 
+    sudo vi prometheus.yaml
+    
+• команда открывает файл prometheus.yaml в текстовом редакторе vi с правами суперпользователя.
+
+• исправить targets: на exporter:9100,
+
+![image](https://github.com/user-attachments/assets/f5f11aa0-873a-449b-b810-41d7939399e0)
+
+![image](https://github.com/user-attachments/assets/f1f47c6a-ee5f-44c9-95f8-372c3ad79534)
+
+
+## Grafana
+
+* переходим на сайт `localhost:3000`
+    * User & Password GRAFANA: `admin`
+    * Код графаны: `3000`
+    * Код прометеуса: `http://prometheus:9090`
+* в меню выбираем вкладку Dashboards и создаем Dashboard
+    * ждем кнопку +Add visualization, а после "Configure a new data source"
+    * выбираем Prometheus
+    * Connection
+    * `http://prometheus:9090`
+* Authentication
+    * Basic authentication
+        * User: `admin`
+        * Password: `admin`
+        * Нажимаем на Save & test и должно показывать зелёную галочку
+* в меню выбираем вкладку Dashboards и создаем Dashboard
+    * ждем кнопку "Import dashboard"
+    * Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
+    * Select Prometheus ждем кнопку "Import"
+ 
+      
+![image](https://github.com/user-attachments/assets/88c472c3-1a61-4d6c-a631-af4af2492fc2)
 
 
 

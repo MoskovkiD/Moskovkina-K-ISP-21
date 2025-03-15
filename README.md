@@ -8,7 +8,7 @@
 
 Далее переходим к установке docker с использованием grafana, вводим следующий набор команд:
 
-    sudo yum install wget
+ sudo yum install wget
 
 • устанавливает утилиту wget на вашу систему
 

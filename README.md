@@ -208,7 +208,7 @@
 
 ![image](https://github.com/user-attachments/assets/6e7e6b51-032b-49b3-a395-a896b16be764)
 
-Захом в connection пишем 'http//:victoriametrics:8428' 
+Захом в connection пишем http//:victoriametrics:8428 
 И заменяем имя из "Prometheus-2" в "Viktoria" нажимаем на dashboards add visualition выбираем "Viktoria" снизу меняем на "code" 
 
 

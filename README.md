@@ -23,7 +23,7 @@
 
 
 
-   sudo yum install docker-ce docker-ce-cli containerd.io
+     sudo yum install docker-ce docker-ce-cli containerd.io
 
 • Устанавливаем docker
 
@@ -32,11 +32,11 @@
 ![image](https://github.com/user-attachments/assets/a82d2a08-5081-49a0-846d-d786e723ee4a)
 
 
-  sudo systemctl enable docker --now
+     sudo systemctl enable docker --now
 
 • Запускаем его и разрешаем автозапуск
 
-  sudo yum install curl
+     sudo yum install curl
 
 • Для этого сначала убедимся в наличие пакета curl
 

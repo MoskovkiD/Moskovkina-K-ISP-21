@@ -52,8 +52,8 @@
 
 
 
-    sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose                  
-
+    sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
+    
 • Теперь скачиваем скрипт docker-compose последней версии, используя объявленную ранее переменную и помещаем его в каталог /usr/bin
 
 
@@ -194,5 +194,9 @@
 ![image](https://github.com/user-attachments/assets/3b473d76-4c58-4a83-ab20-dda4bea9006d)
 
 
+![image](https://github.com/user-attachments/assets/cbc36cb3-0984-49be-a86c-18dd2b3c277b)
+
+
+![image](https://github.com/user-attachments/assets/b6bc7722-d2bb-4424-b565-44739424135b)
 
 

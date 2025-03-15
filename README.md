@@ -189,7 +189,7 @@
 
 ![image](https://github.com/user-attachments/assets/d8f78757-ee0d-46a7-847c-fa510805f641)
 
-Бум, результат
+Бум, результат🐱‍👓😼
 
 ![image](https://github.com/user-attachments/assets/3b473d76-4c58-4a83-ab20-dda4bea9006d)
 

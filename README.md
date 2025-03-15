@@ -128,6 +128,9 @@
 
 • Что бы сохранить что-то в этом документе нажимаем Esc пишем :wq! В этом текставом редакторе мы должны поставить node-exporter после services
 
+![image](https://github.com/user-attachments/assets/469e5e00-f6b1-4c8f-99f6-cfcbf3914926)
+
+
 
 
 

@@ -193,7 +193,7 @@
 
 ![image](https://github.com/user-attachments/assets/3b473d76-4c58-4a83-ab20-dda4bea9006d)
 
-##VictoriaMetrics
+## VictoriaMetrics
 
 Для начала изменим docker-compose.yaml
 
@@ -210,7 +210,8 @@
 
 Захом в connection там где мы писали http//:prometheus:9090 пишем http//:victoriametrics:8428 И заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code" Переходим в терминал и пишем
 
-![image](https://github.com/user-attachments/assets/56eda013-7b16-4586-8d54-9a3b163b4097)
+
+![image](https://github.com/user-attachments/assets/81eed664-073a-4541-8509-069ed7844eeb)
 
 
     echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus

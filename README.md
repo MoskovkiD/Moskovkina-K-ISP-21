@@ -194,7 +194,7 @@
 ![image](https://github.com/user-attachments/assets/3b473d76-4c58-4a83-ab20-dda4bea9006d)
 
 
-![image](https://github.com/user-attachments/assets/cbc36cb3-0984-49be-a86c-18dd2b3c277b)
+<img src="https://github.com/user-attachments/assets/cbc36cb3-0984-49be-a86c-18dd2b3c277b" width=50% height=50%>
 
 
 ![image](https://github.com/user-attachments/assets/b6bc7722-d2bb-4424-b565-44739424135b)

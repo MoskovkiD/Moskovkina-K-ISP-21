@@ -193,6 +193,64 @@
 
 ![image](https://github.com/user-attachments/assets/3b473d76-4c58-4a83-ab20-dda4bea9006d)
 
+##VictoriaMetrics
+
+Для начала изменим docker-compose.yaml
+
+    cd grafana_stack_for_docker
+    
+• команда cd grafana_stack_for_docker изменяет текущий рабочий каталог на каталог grafana_stack_for_docker.
+
+    sudo vi docker-compose.yaml
+    
+• команда sudo открывает файл docker-compose.yaml в редакторе vi с правами суперпользователя.
+
+
+![image](https://github.com/user-attachments/assets/6e7e6b51-032b-49b3-a395-a896b16be764)
+
+Захом в connection там где мы писали http//:prometheus:9090 пишем http//:victoriametrics:8428 И заменяем имя из "Prometheus-2" в "Vika" нажимаем на dashboards add visualition выбираем "Vika" снизу меняем на "code" Переходим в терминал и пишем
+
+![image](https://github.com/user-attachments/assets/56eda013-7b16-4586-8d54-9a3b163b4097)
+
+
+    echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
+    
+• команда отправляет бинарные данные (например, метрики в формате Prometheus) на локальный сервер, который слушает на порту 8428.
+
+    curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'
+
+
+• команда делает запрос к API для получения данных по метрике OILCOINT_metric1
+
+• команда выводит текст, который может быть использован для определения метрики в формате, совместимом с Prometheus
+
+• команда выводит информацию о типе и значении этой метрики в формате, который может быть использован системой мониторинга Prometheus.
+
+
+![image](https://github.com/user-attachments/assets/1672e82c-faa4-447b-a884-6594307b0fb7)
+
+
+Копируем переменную OILCOINT_metric1 и вставляем в query
+
+Нажимаем run
+
+![image](https://github.com/user-attachments/assets/34c98f2c-7359-40fd-a1aa-a3e45592d990)
+
+Копируем переменную OILCOINT_metric1 и вставляем в code
+
+![image](https://github.com/user-attachments/assets/4c73eb9a-f2bd-4d3a-bde6-8d8211d7f113)
+
+
+Копируем переменную light_metric1 и вставляем в query
+
+![image](https://github.com/user-attachments/assets/0676dfbb-1bf7-4ed4-9dc3-8a4bf170f21c)
+
+
+Копируем переменную light_metric1 и вставляем в code
+
+![image](https://github.com/user-attachments/assets/ce447856-d0c7-4eb2-af04-185935dd5c21)
+
+
 
 <img src="https://github.com/user-attachments/assets/cbc36cb3-0984-49be-a86c-18dd2b3c277b" width=50% height=50%>
 

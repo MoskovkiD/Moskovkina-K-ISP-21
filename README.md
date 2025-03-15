@@ -142,7 +142,7 @@
 ![image](https://github.com/user-attachments/assets/f1f47c6a-ee5f-44c9-95f8-372c3ad79534)
 
 
-## Grafana
+## Grafana 🐱‍🐉
 
 ![image](https://github.com/user-attachments/assets/88c472c3-1a61-4d6c-a631-af4af2492fc2)
 

@@ -1,4 +1,4 @@
-# Moskov
+# Moskov 🐱‍👤🐱‍🚀
 Перед началой установки, нужно установить Linux Oracle на VirtualBox, для этого нужно:
 
 Иметь образ Linux

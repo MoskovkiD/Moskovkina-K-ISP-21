@@ -64,11 +64,11 @@
 
 • Предоставление прав на выполнение файла docker-compose.
 
-9. `docker-compose --version`
+9.   `docker-compose --version`
 
 • Проверка установленной версии Docker Compose.
 
-     *fjfjfjf
+ ![image](https://github.com/user-attachments/assets/f2c2a072-9216-4bbb-9f5f-f83535269497)
 
 
 • Можно скачать git прямо из командной строки прописав Y

@@ -147,14 +147,18 @@
 * переходим на сайт `localhost:3000`
     * User & Password GRAFANA: `admin`
     * Код графаны: `3000`
-    * Код прометеуса: `http://prometheus:9090`
-![image](https://github.com/user-attachments/assets/5b31ff06-889d-48f3-9cbf-6219e34aa799)
-![image](https://github.com/user-attachments/assets/9353ec23-a653-45c2-9b13-5715d259a0aa)
+    * Код прометеуса: `http://prometheus:9090
 
       
 * в меню выбираем вкладку Dashboards и создаем Dashboard
+* 
+![image](https://github.com/user-attachments/assets/5b31ff06-889d-48f3-9cbf-6219e34aa799)
+
     * ждем кнопку +Add visualization, а после "Configure a new data source"
     * выбираем Prometheus
+
+![image](https://github.com/user-attachments/assets/aa3fed3a-c610-4934-9339-e38c054d2843)
+
     * Connection
     * `http://prometheus:9090`
 * Authentication
